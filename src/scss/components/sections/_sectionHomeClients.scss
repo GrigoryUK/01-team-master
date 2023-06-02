@@ -1,0 +1,81 @@
+.sectionHomeClients {
+
+  &__container {
+    margin-bottom: 200px;
+  }
+
+  .textC {
+    max-width: 651px;
+    margin-bottom: 100px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+  }
+
+  .blockSlider.blockSlider-clients {
+
+    .swiper-clients {
+      padding-bottom: 5px;
+
+      .swiper-slide {
+        max-width: 234px;
+        //max-width: 354px;
+        //padding-right: 120px;
+
+      }
+
+      .itemCom {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-bottom: 2.4rem;
+
+        transition: all 0.2s ease;
+
+        &__image {
+          margin-bottom: 2rem;
+        }
+
+        &__animation {
+
+
+          @keyframes clientImageAnimation {
+            0% {
+              transform: rotateY(0deg);
+            }
+
+            100% {
+              transform: rotateY(359deg);
+            }
+          }
+
+        }
+
+        &__image {
+          user-select: none;
+        }
+
+        &__link {
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+          width: fit-content;
+          height: 40px;
+          white-space: nowrap;
+
+
+        }
+
+
+
+
+      }
+
+
+    }
+  }
+}

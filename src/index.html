@@ -3,11 +3,17 @@
 
 @include('partials/head.html')
 
-<body class="page__body">
+<body class="page__body light-mode">
   <div class="site-container">
-
-    @include('partials/index.html')
-   
+    @include('partials/header.html')
+    @include('partials/sectionHomeHero.html')
+    @include('partials/sectionHomeToolbox.html')
+    @include('partials/sectionHomeClients.html')
+    @include('partials/sectionHomePeople.html')
+    @include('partials/sectionHomePartners.html')
+    @include('partials/sectionHomeContact.html')
+    @include('partials/sectionHomeNoScroll.html')
+    @include('partials/footer.html')
 
   </div>
 </body>

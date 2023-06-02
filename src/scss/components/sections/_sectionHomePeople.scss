@@ -1,0 +1,188 @@
+.sectionHomePeople {
+
+  &__content {
+
+    .textC.primary {
+      margin-bottom: 100px;
+
+      @include mobile {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .blockSlider.blockSlider-people {
+
+    //.swiper-people {
+    //  overflow: visible;
+    //}
+    //
+    //.sliderC-slide {
+    //  width: auto;
+    //}
+    //
+    //.itemCom {
+    //  display: flex;
+    //  align-items: flex-start;
+    //  flex-direction: column;
+    //  cursor: pointer;
+    //
+    //  //img {
+    //  //  position: absolute;
+    //  //  inset: 0px;
+    //  //  box-sizing: border-box;
+    //  //  padding: 0px;
+    //  //  border: none;
+    //  //  margin: auto;
+    //  //  display: block;
+    //  //  width: 0px;
+    //  //  height: 0px;
+    //  //  min-width: 100%;
+    //  //  max-width: 100%;
+    //  //  min-height: 100%;
+    //  //  max-height: 100%;
+    //  //  user-select: none;
+    //  //}
+    //
+    //  .buttonCom {
+    //
+    //    display: flex;
+    //    align-items: center;
+    //    margin-bottom: 50px;
+    //
+    //    span {
+    //      display: block;
+    //      color: var(--main-font-color);
+    //    }
+    //
+    //    &__name {
+    //      font-weight: 400;
+    //      font-style: normal;
+    //      font-size: 38px;
+    //      line-height: 80%;
+    //      text-align: start;
+    //      text-transform: uppercase;
+    //    }
+    //
+    //
+    //
+    //    &__icon {
+    //      font-weight: 400;
+    //      font-style: normal;
+    //      font-size: 38px;
+    //      text-align: start;
+    //      text-transform: uppercase;
+    //      transition: all 0.2s ease;
+    //      opacity: 0;
+    //      visibility: hidden;
+    //    }
+    //  }
+    //
+    //  &__animation {
+    //    position: relative;
+    //    perspective: 1000px;
+    //    padding-bottom: 100px;
+    //
+    //    &--front {
+    //      backface-visibility: hidden;
+    //      height: 100%;
+    //      left: 0;
+    //      position: relative;
+    //      top: 0;
+    //      transform: rotateY(0deg);
+    //      transform-style: preserve-3d;
+    //      transition: all 0.6s ease 0s;
+    //      width: 100%;
+    //      z-index: 2;
+    //
+    //      &.rotate {
+    //        position: absolute;
+    //        transform: rotateY(-180deg);
+    //      }
+    //
+    //      &--image {
+    //        box-sizing: border-box;
+    //        display: inline-block;
+    //        overflow: hidden;
+    //        background: none;
+    //        opacity: 1;
+    //        border: 0;
+    //        margin: 0;
+    //        padding: 0;
+    //        position: relative;
+    //      }
+    //
+    //    }
+    //
+    //    &--back {
+    //      backface-visibility: hidden;
+    //      height: 100%;
+    //      left: 0;
+    //      position: absolute;
+    //      top: 0;
+    //      transform: rotateY(-180deg);
+    //      transform-style: preserve-3d;
+    //      transition: all 0.6s ease 0s;
+    //      width: 100%;
+    //
+    //      &.rotate {
+    //        position: relative;
+    //        transform: rotateY(0deg);
+    //      }
+    //
+    //      &--image {
+    //        box-sizing: border-box;
+    //        display: inline-block;
+    //        overflow: hidden;
+    //        background: none;
+    //        opacity: 1;
+    //        border: 0;
+    //        margin: 0;
+    //        padding: 0;
+    //        position: relative;
+    //      }
+    //    }
+    //  }
+    //
+    //  &__info {
+    //    margin-top: 2rem;
+    //    font-weight: 400;
+    //    font-style: normal;
+    //    font-size: 38px;
+    //    line-height: 80%;
+    //    text-align: start;
+    //    text-transform: uppercase;
+    //    color: var(--main-font-color);
+    //  }
+    //
+    //
+    //
+    //  @include hover {
+    //
+    //    .buttonCom__icon {
+    //      opacity: 1;
+    //      visibility: visible;
+    //    }
+    //  }
+    //
+    //  @include mobile {
+    //
+    //    &:hover {
+    //      .buttonCom__icon {
+    //        opacity: 1;
+    //        visibility: visible;
+    //      }
+    //    }
+    //
+    //    &:focus {
+    //      .buttonCom__icon {
+    //        opacity: 1;
+    //        visibility: visible;
+    //      }
+    //    }
+    //  }
+    //}
+
+
+  }
+}

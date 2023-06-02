@@ -1,0 +1,142 @@
+.header {
+
+  &__container {
+    padding-top: 15px;
+    margin-bottom: 200px;
+
+    @include mobile {
+      padding-top: 30px;
+    }
+  }
+  &__switcher {
+
+    max-width: 1132px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: flex-end;
+
+    &--icons {
+      position: relative;
+      overflow: hidden;
+    }
+
+    @include mobile {
+      justify-content: center;
+      margin-bottom: 42px;
+    }
+
+    .buttonCom {
+      margin-right: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      position: relative;
+
+      @include mobile {
+        margin-right: 0;
+      }
+
+      svg {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        fill: var(--main-font-color);
+      }
+
+      @include hover {
+
+        .icon-sunC {
+          fill: #e74925;;
+        }
+
+        .icon-moonC {
+          fill: #2795e9;;
+        }
+      }
+
+      .icon-moonC {
+        transform: scale(1) rotate(0);
+        &.hidden {
+          transform: scale(0) rotate(90deg) translateY(5px);
+        }
+      }
+
+      .icon-sunC {
+        transform: scale(1) rotate(0);
+
+        &.hidden {
+          transform: scale(0) rotate(-90deg);
+        }
+      }
+
+
+
+
+    }
+
+
+
+
+
+  }
+
+  &__content {
+
+    .textC.primary {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @include mobile {
+      margin-bottom: 44px;
+    }
+
+    &--button {
+      position: relative;
+      overflow: hidden;
+      width: 170px;
+      height: 40px;
+      padding: 7px 2px;
+      border-radius: 100px;
+      background-color: var(--main-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    svg {
+      position: absolute;
+      max-width: 150px;
+      transition: all 0.3s linear;
+    }
+
+    a {
+      margin: 0;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 38px;
+      line-height: 80%;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--active-link-color);
+      position: absolute;
+      transition: all 0.2s linear;
+      opacity: 0;
+      visibility: hidden;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

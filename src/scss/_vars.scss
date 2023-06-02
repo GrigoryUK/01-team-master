@@ -1,13 +1,41 @@
 
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
-  --container-offset: 15px;
+  --font-family: "SoLow-Trial", sans-serif;
+  --content-width: 906px;
+  --container-offset: 16px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --font-primary: 'SoLow-Trial', sans-sarif;
 
-  // colors
-  --white: #fff;
-  --black: #0000;
-  --beige:  #FFF8F0;
+  --shodow-primary: -5px 5px 0 rgba(0,0,0,.25);
+}
+
+.light-mode {
+  --bg-color: #e5e5e5!important;
+  --main-color: #24ffde!important;
+  --main-font-color: #000!important;
+  --main-font-color-reverce: #fff!important;
+  --selected-text-color: #000!important;
+  --selected-toolBox-color: #000!important;
+  --selected-oval-color: #000!important;
+  --team-item-color: #000;
+  --active-link-color: #000;
+  --underline-color: #000;
+  --shadow-primary: -5px 5px 0 rgba(0,0,0,.25);
+  --liner-primary: linear-gradient(180deg, rgba(143, 60, 255, 0) 38.78%, #A868FF 100%);
+}
+
+.dark-mode {
+  --bg-color: #0f201d!important;
+  --main-color: #24ffde!important;
+  --main-font-color: #fff!important;
+  --main-font-color-reverce: #000!important;
+  --selected-text-color: #000!important;
+  --selected-toolBox-color: #000!important;
+  --selected-oval-color: #000!important;
+  --team-item-color: #24ffde;
+  --active-link-color: #000;
+  --underline-color: #fff;
+  --shadow-primary: -5px 5px 0 rgba(255,255,255,.8);
+  --liner-primary: linear-gradient(180deg,rgba(36,255,222,0) 37.78%,#24ffde);
 }

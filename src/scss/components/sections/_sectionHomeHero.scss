@@ -1,0 +1,85 @@
+.sectionHomeHero {
+
+
+  &__content {
+    max-width: 550px;
+    margin: 0 auto 200px;
+
+    @include mobile {
+      padding: 0 20px;
+    }
+  }
+
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 60px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 36px;
+      margin-bottom: 50px;
+    }
+
+    &--cont {
+      display: flex;
+      align-items: center;
+      width: 206px;
+    }
+
+    svg {
+      min-width: 37px;
+      max-width: 37px;
+      max-height: 26px;
+      min-height: 26px;
+      margin-left: 0.8em;
+      margin-right: 0.5em;
+    }
+    p {
+      margin: 0;
+      font-family: var(--font-primary);
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 80%;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    a {
+
+      @include mobile {
+        width: auto;
+      }
+
+
+    }
+  }
+
+  &__frame {
+    position: relative;
+
+    &--black {
+      top: -10px;
+      position: absolute;
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+
+      &.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &--white {
+      transition: all 0.2s ease-in-out;
+
+      &.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}

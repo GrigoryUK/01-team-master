@@ -1,0 +1,232 @@
+.sectionHomeNoScroll {
+  position: relative;
+  &__container {
+    position: relative;
+    overflow: hidden;
+    min-width: 100%;
+    height: 16450px;
+    padding: 0 1ch;
+    background: var(--liner-primary);
+
+    @include mobile {
+      height: 6300px;
+    }
+
+    img {
+      width: auto;
+      height: auto;
+    }
+
+    .decorC {
+      position: absolute;
+
+      &--1 {
+        top: 690px;
+        left: 30%;
+
+        @include small-tablet {
+          top: 165px;
+          left: 5%;
+        }
+      }
+
+      &--2 {
+        left: 140px;
+        top: 3270px;
+
+        @include small-tablet {
+          top: 2535px;
+          left: -80px;
+        }
+      }
+
+      &--3 {
+        top: 7196px;
+        left: 10%;
+
+        @include small-tablet {
+          left: auto;
+          top: 1500px;
+          right: -70px;
+        }
+      }
+
+      &--4 {
+        top: 10288px;
+        display: block;
+
+        @include small-tablet {
+          display: none;
+        }
+      }
+
+      &--5 {
+        top: 13950px;
+        left: 70%;
+
+        @include small-tablet {
+          top: 3960px;
+          left: -136px;
+        }
+      }
+
+      &--6 {
+        top: 15300px;
+        left: 10%;
+
+        @include small-tablet {
+          top: 5250px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .itemCom {
+      max-width: 692px;
+      width: 100%;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 2rem;
+
+
+      @include small-tablet {
+        bottom: 150px;
+        gap: 100px;
+      }
+
+      &__animation {
+        animation: animation 305s linear infinite;
+
+        @keyframes animation {
+          100% {
+            transform: rotate(1turn);
+          }
+        }
+
+        img {
+          @include mobile {
+            width: 100%;
+          }
+        }
+      }
+
+      &__link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 2px solid var(--main-font-color-reverce);
+        font-weight: 400;
+        font-style: normal;
+        font-size: 38px;
+        font-family: var(--font-primary);
+        line-height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--main-font-color-reverce);
+
+        @include small-tablet {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          border: none;
+          line-height: 80%;
+          padding: 0 20px;
+        }
+
+        span {
+          position: relative;
+          padding-left: 0.2em;
+
+          @include small-tablet {
+            padding-left: 0;
+            border-bottom: 2px solid var(--main-font-color-reverce);
+          }
+        }
+      }
+
+    }
+
+    .triggerCom {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 32px;
+
+
+      &--1 {
+        top: 20%;
+      }
+
+      &--2 {
+        top: 32%;
+      }
+
+      &--3 {
+        top: 50%;
+      }
+
+      &--4 {
+        top: 75%;
+      }
+
+      &--5 {
+        top: 90%;
+
+        @include mobile {
+          top: 82%;
+        }
+      }
+
+    }
+  }
+
+  &__texts {
+    position: sticky;
+    top: 50vh;
+    z-index: 10;
+    max-width: 80%;
+    margin: auto;
+
+    &--container {
+      position: relative;
+    }
+
+    .textCom {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 38px;
+      font-family: var(--font-primary);
+      line-height: 80%;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: default;
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 300px;
+
+
+      &.text-1 {
+        opacity: 1;
+
+      }
+
+      &.hidden {
+        opacity: 0;
+      }
+    }
+
+    @include mobile {
+      top: 45vh;
+    }
+  }
+}
+

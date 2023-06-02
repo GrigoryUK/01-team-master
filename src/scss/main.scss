@@ -5,11 +5,18 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/base/fonts";
+@import "./components/global";
 @import "./components/base/btn";
-@import "./components/index";
 @import "./components/base/header";
 @import "./components/base/footer";
+@import "./components/sections/sectionHomeHero";
+@import "./components/sections/sectionHomePartners";
+@import "./components/sections/sectionHomeClients";
+@import "./components/sections/sectionHomePeople";
+@import "./components/sections/sectionHomeContact";
+@import "./components/sections/sectionHomeNoScroll";
+@import "./components/sections/sectionHomeToolbox";
+
 
 
 
