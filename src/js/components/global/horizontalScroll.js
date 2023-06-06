@@ -1,4 +1,4 @@
-import {isDesktop} from "../../functions/check-viewport";
+import { isDesktop } from "../../functions/check-viewport"
 
 
 export function horizontalScroll() {
@@ -8,6 +8,7 @@ export function horizontalScroll() {
     const sliderClients = document.querySelector('.sliderC-wrapper-clients');
     const sliderPeople = document.querySelector('.sliderC-wrapper-people');
     const sliderToolbox = document.querySelectorAll('.sliderC-wrapper-toolbox');
+    const sliderPartners = document.querySelector('.sliderC-wrapper-partners');
 
     if (sliderClients) {
       scrollFun(sliderClients);
@@ -21,6 +22,10 @@ export function horizontalScroll() {
       sliderToolbox.forEach(item => {
         scrollFun(item);
       })
+    }
+
+    if (sliderPartners) {
+      scrollFun(sliderPartners);
     }
   }
 

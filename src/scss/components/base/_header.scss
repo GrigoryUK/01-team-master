@@ -1,5 +1,4 @@
 .header {
-
   &__container {
     padding-top: 15px;
     margin-bottom: 200px;
@@ -9,7 +8,6 @@
     }
   }
   &__switcher {
-
     max-width: 1132px;
     margin: 0 auto;
     padding: 0 16px;
@@ -47,13 +45,12 @@
       }
 
       @include hover {
-
         .icon-sunC {
-          fill: #e74925;;
+          fill: #e74925;
         }
 
         .icon-moonC {
-          fill: #2795e9;;
+          fill: #2795e9;
         }
       }
 
@@ -71,20 +68,10 @@
           transform: scale(0) rotate(-90deg);
         }
       }
-
-
-
-
     }
-
-
-
-
-
   }
 
   &__content {
-
     .textC.primary {
       max-width: 750px;
       margin: 0 auto;
@@ -116,7 +103,8 @@
     svg {
       position: absolute;
       max-width: 150px;
-      transition: all 0.3s linear;
+      // transition: all 0.5s linear;
+      transition: none;
     }
 
     a {
@@ -129,7 +117,8 @@
       text-transform: uppercase;
       color: var(--active-link-color);
       position: absolute;
-      transition: all 0.2s linear;
+      // transition: all 0.8s linear;
+      transition: none;
       opacity: 0;
       visibility: hidden;
 

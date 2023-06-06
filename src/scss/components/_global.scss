@@ -1,6 +1,4 @@
-
 .textC {
-
   p {
     margin: 0;
   }
@@ -28,7 +26,6 @@
       font-style: italic;
     }
 
-
     p + p {
       margin-top: 1em;
     }
@@ -36,7 +33,6 @@
 }
 
 .linkC {
-
   &.primary {
     position: relative;
     display: flex;
@@ -85,7 +81,6 @@
 }
 
 .subtitleC {
-
   &.primary {
     margin: 0;
     font-weight: 400;
@@ -100,7 +95,6 @@
 }
 
 .sliderC {
-
   &.primary {
     display: flex;
     align-items: center;
@@ -116,7 +110,6 @@
     .sliderC-wrapper-container {
       display: flex;
     }
-
 
     .sliderC-wrapper {
       position: relative;
@@ -138,7 +131,6 @@
       &::-webkit-scrollbar {
         display: none;
       }
-
     }
 
     .sliderC-slide {
@@ -147,13 +139,10 @@
       height: 100%;
       position: relative;
       transition-property: transform;
-
-
     }
   }
 
   &.sliderC-clients {
-
     .sliderC-wrapper {
       padding-bottom: 10px;
     }
@@ -162,11 +151,11 @@
       max-width: 234px;
       margin-right: 150px;
       width: max-content;
+      padding: 0 16px;
 
       @include mobile {
         margin-right: 80px;
       }
-
 
       .itemCom {
         display: flex;
@@ -182,8 +171,6 @@
         }
 
         &__animation {
-
-
           @keyframes clientImageAnimation {
             0% {
               transform: rotateY(0deg);
@@ -193,7 +180,6 @@
               transform: rotateY(359deg);
             }
           }
-
         }
 
         &__image {
@@ -201,7 +187,6 @@
         }
 
         &__link {
-
           display: flex;
           align-items: center;
           justify-content: center;
@@ -209,8 +194,6 @@
           width: fit-content;
           height: 40px;
           white-space: nowrap;
-
-
         }
 
         @include hover {
@@ -218,8 +201,8 @@
 
           .itemCom__link {
             justify-content: flex-start;
-            padding-right: .5em;
-            padding-left: .2em;
+            padding-right: 0.5em;
+            padding-left: 0.2em;
             background-color: var(--main-color);
             color: var(--active-link-color);
             box-shadow: var(--shadow-primary);
@@ -243,8 +226,6 @@
   }
 
   &.sliderC-people {
-
-
     .sliderC-wrapper-people {
       align-items: flex-start;
       min-height: 950px;
@@ -253,6 +234,7 @@
     .sliderC-slide {
       width: max-content;
       margin-right: 120px;
+      padding: 0 16px;
 
       @include mobile {
         margin-right: 50px;
@@ -265,14 +247,11 @@
         cursor: pointer;
         min-width: 360px;
 
-
-
         img {
           user-select: none;
         }
 
         .buttonCom {
-
           display: flex;
           align-items: center;
           margin-bottom: 50px;
@@ -290,7 +269,6 @@
             text-align: start;
             text-transform: uppercase;
           }
-
 
           &__icon {
             font-weight: 400;
@@ -337,7 +315,6 @@
               padding: 0;
               position: relative;
             }
-
           }
 
           &--back {
@@ -378,12 +355,9 @@
           line-height: 80%;
           text-align: start;
           text-transform: uppercase;
-
         }
 
-
         @include hover {
-
           .buttonCom__icon {
             opacity: 1;
             visibility: visible;
@@ -391,7 +365,6 @@
         }
 
         @include mobile {
-
           &:hover {
             .buttonCom__icon {
               opacity: 1;
@@ -408,6 +381,38 @@
         }
       }
     }
+  }
 
+  &.sliderC-partners {
+    .sliderC-wrapper-container {
+      align-items: center;
+    }
+    .sliderC-slide {
+      width: max-content;
+
+      padding: 0 16px;
+      margin-right: 120px;
+
+      @include mobile {
+        margin-right: 90px;
+      }
+
+      img {
+        min-width: 200px;
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        user-select: none;
+
+        @include mobile {
+          min-width: 160px;
+          max-width: 160px;
+        }
+      }
+    }
+
+    .sliderC__animation {
+      display: block;
+    }
   }
 }

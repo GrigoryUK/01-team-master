@@ -1,6 +1,6 @@
-import $ from "jquery";
-import {gsap} from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
+import $ from "jquery"
+import { ScrollTrigger } from "../../vendor/ScrollTrigger.min"
+import { gsap } from '../../vendor/gsap.min'
 export default function noScrollJs() {
   const container = $('.sectionHomeNoScroll');
   gsap.registerPlugin(ScrollTrigger);
